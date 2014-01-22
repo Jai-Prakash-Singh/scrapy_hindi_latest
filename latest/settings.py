@@ -13,3 +13,8 @@ NEWSPIDER_MODULE = 'latest.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'latest (+http://www.yourdomain.com)'
+
+
+DOWNLOADER_MIDDLEWARES = {'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
+                          'latest.proxy_middle.ProxyMiddleware': 120,
+                         }

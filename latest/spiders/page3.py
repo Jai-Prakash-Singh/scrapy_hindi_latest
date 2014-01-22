@@ -37,7 +37,7 @@ class DmozSpider(BaseSpider):
     start_urls = re.findall(r'https?://[^\s<>"]+|www\.[^\s<>"]+', str(f.read())) 
     f.close()
     print start_urls
-    sys.exit()
+    #sys.exit()
 
     #start_urls = ['http://www.filmshowonline.net/videos/149965/']
 
@@ -75,5 +75,3 @@ class DmozSpider(BaseSpider):
         f = open("page3_link2_link.csv", "a+")
         print >>f, ','.join([str(response.url), result])
         print str(response.url), result
-
-

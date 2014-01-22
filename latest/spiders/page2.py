@@ -15,13 +15,13 @@ class DmozSpider(BaseSpider):
     
     output = subprocess.check_output(['python', 'page1.py'])
     
-    #start_urls = ast.literal_eval(output)
-    #print start_urls, type(start_urls), len(start_urls) 
+    start_urls = ast.literal_eval(output)
+    print start_urls, type(start_urls), len(start_urls) 
     #sys.exit()
-    start_urls = ["http://www.hindilinks4u.net/2013/12/gori-tere-pyaar-mein-2013.html"]
+    #start_urls = ["http://www.hindilinks4u.net/2013/12/gori-tere-pyaar-mein-2013.html"]
 
-    if os.path.isfile("page2_vidio.csv"):
-        os.remove("page2_vidio.csv")
+    #if os.path.isfile("page2_vidio.csv"):
+    #    os.remove("page2_vidio.csv")
 
             
        

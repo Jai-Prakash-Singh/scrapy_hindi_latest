@@ -1,5 +1,8 @@
+import proxy_module
+
 def main():
     import urllib2
+    #page = proxy_module.main("http://www.hindilinks4u.net/")
     page = urllib2.urlopen("http://www.hindilinks4u.net/")
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(page)
